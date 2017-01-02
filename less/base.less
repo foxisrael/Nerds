@@ -1,8 +1,7 @@
-//body
-
-html {
-  box-sizing: border-box;
-  padding: 0;
+html, body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 *,
@@ -12,80 +11,73 @@ html {
   margin: 0;
 }
 
-body {
-  overflow-x: hidden;
-  font-family: "opensans", "Arial", sans-serif;
-  margin: 0 auto;
-  text-align: center;
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+p, li {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 22px;
+    color: #283136;
+}
+
+h1 {
+    font-family: Roboto;
+    font-size: 36px;
+    line-height: 36px;
+    color: #000;
+    margin: 0;
+    padding: 0;
 }
 
 h2 {
-  font-family: @font-family-light;
-  font-size: @font-size-h2;
-  font-weight: 200;
-  color: @color-darkblue;
+    font-family: Roboto;
+    font-size: 36px;
+    line-height: 36px;
+    color: #000;
+    margin: 0;
+    padding: 0;
 }
 
 h3 {
-  font-size: @font-size-h3;
-  font-family: @font-family-bold;
-  font-weight: bold;
-}
-
-p {
-  font-size: @font-size-basic;
-  line-height: @line-height-basic;
-  margin: 0;
-  color: #444;
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
 }
 
 a {
-  font-family: @font-family-bold;
-  text-decoration: none;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 30px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header h1 {
+    font-family: Roboto;
+    line-height: normal;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 ul {
-  margin: 0;
-  padding: 0;
-}
-
-button {
-  border: 0;
-  background: none;
-  outline: none;
-  cursor: pointer;
+    margin: 0;
 }
 
 .clearfix::after {
   display: table;
   clear: both;
   content: "";
-}
-
-.wrapper {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-@media (min-width: 700px) {
-  .wrapper {
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 40px;
-  }
-}
-@media (min-width: 960px) {
-  .wrapper {
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
 }
