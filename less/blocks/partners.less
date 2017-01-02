@@ -1,4 +1,8 @@
 .partners {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     padding-top: 43px;
     padding-bottom: 45px;
     margin-bottom: 80px;
@@ -8,17 +12,16 @@
 }
 
 .glukhanko {
-    display: inline-block;
-    vertical-align: middle;
+    display: block;
     background-image: url("../img/logo-glukhanko.png");
     background-repeat: no-repeat;
     width: 198px;
     height: 37px;
 }
 
-.glukhanko:hover, .glukhanko:active {
-    display: inline-block;
-    vertical-align: middle;
+.glukhanko:active,
+.glukhanko:hover {
+    display: block;
     background-image: url("../img/logo-glukhanko-active.png");
     background-repeat: no-repeat;
     width: 198px;
@@ -26,15 +29,15 @@
 }
 
 .htmlacademy {
-    display: inline-block;
-    vertical-align: middle;
+    display: block;
     background-image: url("../img/logo-htmlacademy.png");
     background-repeat: no-repeat;
     width: 199px;
     height: 68px;
 }
 
-.htmlacademy:hover, .htmlacademy:active {
+.htmlacademy:active,
+.htmlacademy:hover {
     background-image: url("../img/logo-htmlacademy-active.png");
 }
 
@@ -47,10 +50,12 @@
     height: 86px;
 }
 
-.barbershop:hover, .barbershop:active {
+.barbershop:active,
+.barbershop:hover {
     background-image: url("../img/logo-barbershop-active.png");
 }
 
-.glukhanko, .htmlacademy {
+.glukhanko,
+.htmlacademy {
     margin-right: 120px;
 }

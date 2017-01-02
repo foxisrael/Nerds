@@ -1,26 +1,24 @@
 .about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
     min-height: 325px;
     padding: 75px 0 53px 0;
     border-bottom: 2px solid #eee;
 }
 
-.about-text {
-    float: left;
+.about__text {
     margin-right: 64px;
     margin-top: -24px;
 }
 
-.about-logo {
-    float: right;
-}
-
-.about-text ul, .about-logo ul {
+.about__text ul, .about__logo ul {
     padding: 0;
     margin: 0;
     list-style-type: none;
 }
 
-.about-text li, .about-logo li {
+.about__text li, .about__logo li {
     margin-top: 22px;
 }
 
@@ -34,15 +32,15 @@
     margin-top: 45px;
 }
 
-.about-text {
+.about__text {
     padding-bottom: 20px;
 }
 
-.about-logo {
+.about__logo {
     float: left;
 }
 
-.about-logo-date {
+.about__logo-date {
     width: 100%;
     border-bottom: 2px solid #eee;
     position: relative;
@@ -50,7 +48,7 @@
     margin-left: 15px;
 }
 
-.about-logo-date-2004 {
+.about__logo-date-2004 {
     display: inline-block;
     width: 110px;
     position: absolute;
@@ -60,7 +58,7 @@
     background-color: #fff;
 }
 
-.about-logo-big {
+.about__logo-big {
     background-image: url("../img/logo-nerds-big.png");
     background-repeat: no-repeat;
     margin-top: -33px;
@@ -69,12 +67,12 @@
     padding-bottom: 35px;
 }
 
-.about-logo-big-text {
+.about__logo-big-text {
     padding-top: 30px;
     margin-left: 13px;
 }
 
-.about-text li, .about-logo-big-text li {
+.about__text li, .about__logo-big-text li {
     position: relative;
     padding-left: 36px;
 }

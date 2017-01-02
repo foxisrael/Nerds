@@ -1,4 +1,7 @@
 .service {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     min-height: 325px;
     padding: 75px 0;
     border-bottom: 2px solid #eee;
@@ -10,65 +13,67 @@
     line-height: 22px;
 }
 
-.service-sites .btn {
+.service__sites .btn {
     background: #fb565a;
     margin-top: 8px;
     padding: 10px 37px;
 }
 
-.service-sites .btn:hover {
+.service__sites .btn:hover {
     background: #d6494d;
 }
 
-.service-sites .btn:active {
+.service__sites .btn:active {
     background: #b63538;
 }
 
-.service-apps .btn {
+.service__apps .btn {
     background: #00ca74;
     margin-top: 8px;
     padding: 10px 37px;
 }
 
-.service-apps .btn:hover {
+.service__apps .btn:hover {
     background: #01a25e;
 }
 
-.service-apps .btn:active {
+.service__apps .btn:active {
     background: #009053;
 }
 
-.service-presentation .btn {
+.service__presentation .btn {
     background: #efc84a;
     margin-top: 8px;
     padding: 10px 37px;
 }
 
-.service-presentation .btn:hover {
+.service__presentation .btn:hover {
     background: #d6ae2c;
 }
 
-.service-presentation .btn:active {
+.service__presentation .btn:active {
     background: #c09b24;
 }
 
-.service-sites, .service-apps, .service-presentation {
+.service__apps,
+.service__presentation,
+.service__sites {
     min-width: 240px;
-    display: block;
-    float: left;
     margin-right: 80px;
     font-size: 0;
 }
 
-.service-sites, .service-apps, .service-presentation p {
+.service__apps,
+.service__presentation p,
+.service__sites {
     font-size: 15px;
 }
 
-.service-presentation {
+.service__presentation {
     margin-right: 0;
 }
 
-.service-sites-img {
+.service__sites-img {
     background-image: url("../img/web-sites.jpg");
     background-repeat: no-repeat;
     width: 240px;
@@ -76,7 +81,7 @@
     margin-bottom: 24px;
 }
 
-.service-apps-img {
+.service__apps-img {
     background-image: url("../img/applications.jpg");
     background-repeat: no-repeat;
     width: 240px;
@@ -84,7 +89,7 @@
     margin-bottom: 24px;
 }
 
-.service-presentation-img {
+.service__presentation-img {
     background-image: url("../img/presentations.jpg");
     background-repeat: no-repeat;
     width: 240px;

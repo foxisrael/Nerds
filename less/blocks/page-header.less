@@ -1,37 +1,20 @@
 .page-header {
-    height: 410px;
-    background: #eeeeee;
-    padding: 25px 0 0 0;
-}
-
-.header-inside {
-    height: 300px;
-    background: #eeeeee;
-    padding: 25px 0 0 0;
+    background: @color-gray;
 }
 
 .page-header__menu {
-    padding-bottom: 110px
-}
-
-.menu-inside {
-    padding-bottom: 120px
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+    min-height: 120px;
 }
 
 .logo {
     display: block;
-    float: left;
     background-image: url("../img/logo-nerds.png");
     background-repeat: no-repeat;
     width: 139px;
     height: 56px;
-}
-
-nav {
-    display: block;
-    float: right;
-    margin-top: 28px;
-    text-align: center;
 }
 
 nav li {
@@ -41,24 +24,18 @@ nav li {
 }
 
 nav a {
-    font-family: Roboto;
-    font-weight: bold;
-    font-size: 14px;
+    font-family: @font-family-bold;
+    font-size: 16px;
     line-height: 30px;
-    color: #000;
+    color: @color-black;
 }
 
 nav a:hover {
-    color: #fb565a
+    color: @color-red;
 }
 
 nav a:active {
-    color: #a7a9ac
-}
-
-nav li:last-child {
-    padding-left: 50px;
-    margin-right: 0;
+    color: #a7a9ac;
 }
 
 .busket::before {
@@ -100,34 +77,6 @@ nav li:last-child {
 .active-open {
     color: black;
     border-bottom: #fb565a solid 2px;
-}
-
-.btn {
-    display: inline-block;
-    font-family: inherit;
-    font-size: 12px;
-    line-height: 18px;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: bold;
-    background: #fb565a;
-    padding: 10px 39px;
-    border-radius: 5px;
-    text-align: center;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background: #d6494d;
-}
-
-.btn:active {
-    background: #b63538;
-}
-
-.btn-slider {
-    padding: 10px 70px;
-    margin-top: 13px;
 }
 
 .page-header__slider h2 {
