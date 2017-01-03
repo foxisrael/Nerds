@@ -112,10 +112,10 @@ ul {
   content: "";
   width: 15px;
   height: 15px;
-  border: 1px solid #000;
   background: url("../img/icon-busket.png");
   top: 7px;
   left: -33px;
+  opacity: 0.3;
 }
 .btn-slider {
   max-width: 240px;
@@ -821,6 +821,12 @@ footer {
 }
 /* SLIDER */
 .slider {
+  position: relative;
+  overflow: hidden;
+}
+.slider-1,
+.slider-2,
+.slider-3 {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
@@ -829,6 +835,55 @@ footer {
       justify-content: space-between;
   -ms-flex-align: center;
       align-items: center;
+}
+.slider input[type="radio"] {
+  display: none;
+}
+.slider-controls {
+  position: absolute;
+  top: 320px;
+  left: 50%;
+  z-index: 10;
+}
+.slider-controls label {
+  display: inline-block;
+  vertical-align: top;
+  width: 12px;
+  height: 12px;
+  margin: 0 8px;
+  background: #ffffff;
+  border: 3px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#btn-1:checked ~ .slides .slider-1 {
+  display: -ms-flexbox;
+  display: flex;
+}
+#btn-1:checked ~ .slides .slider-2,
+#btn-1:checked ~ .slides .slider-3 {
+  display: none;
+}
+#btn-2:checked ~ .slides .slider-2 {
+  display: -ms-flexbox;
+  display: flex;
+}
+#btn-2:checked ~ .slides .slider-1,
+#btn-2:checked ~ .slides .slider-3 {
+  display: none;
+}
+#btn-3:checked ~ .slides .slider-3 {
+  display: -ms-flexbox;
+  display: flex;
+}
+#btn-3:checked ~ .slides .slider-1,
+#btn-3:checked ~ .slides .slider-2 {
+  display: none;
+}
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+  background: #c1c1c1;
 }
 .slider__text {
   max-width: 560px;
@@ -852,10 +907,6 @@ footer {
 .slider__image-2 {
   width: 660px;
   left: -80px;
-}
-.slider-2,
-.slider-3 {
-  display: none;
 }
 .service {
   display: -ms-flexbox;
