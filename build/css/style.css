@@ -279,7 +279,6 @@ button {
 }
 .site-form {
   width: 260px;
-  margin-right: 140px;
 }
 .site-features,
 .site-verstka {
@@ -420,11 +419,13 @@ button {
 }
 /* RIGHT */
 .items {
-  width: 760px;
+  width: 765px;
 }
 .items-sort {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
   -ms-flex-pack: justify;
       justify-content: space-between;
   margin-bottom: 32px;
@@ -448,22 +449,90 @@ button {
   height: 9px;
 }
 /* MAKETS */
-.top-plashka {
-  background-color: #f1f1f1;
-  width: 225px;
-  padding: 10px 0 10px 15px;
-  height: 10px;
-  text-align: left;
+.item__shablon {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-bottom: 30px;
+}
+.maket-sedona,
+.maket-pink,
+.maket-barbershop,
+.maket-mishka,
+.maket-aplus,
+.maket-kvast {
+  position: relative;
+  margin-bottom: 35px;
+}
+.browser-buttons {
+  background-color: #eeeeee;
+  width: 360px;
+  height: 41px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  position: relative;
 }
-.round {
-  width: 10px;
-  height: 10px;
-  border-radius: 5px;
-  background-color: #fff;
-  float: left;
-  margin-right: 8px;
+.browser-buttons li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 9px;
+  position: relative;
+  top: 11px;
+  left: -20px;
+}
+.browser-buttons li::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+.item__shablon-sedona-image {
+  width: 360px;
+  height: 576px;
+  background: url("../img/img-sedona.jpg") no-repeat;
+  position: relative;
+}
+.item__shablon-pink-image {
+  width: 360px;
+  height: 576px;
+  background: url("../img/img-pink.jpg") no-repeat;
+  position: relative;
+}
+.item__shablon-barbershop-image {
+  width: 360px;
+  height: 576px;
+  background: url("../img/img-barbershop.jpg") no-repeat;
+  position: relative;
+}
+.item__shablon-mishka-image {
+  width: 360px;
+  height: 576px;
+  background: url("../img/img-mishka.jpg") no-repeat;
+  position: relative;
+}
+.item__shablon-aplus-image {
+  width: 360px;
+  height: 576px;
+  background: url("../img/img-aplus.jpg") no-repeat;
+  position: relative;
+}
+.item__shablon-kvast-image {
+  width: 360px;
+  height: 576px;
+  background: url("../img/img-kvast.jpg") no-repeat;
+  position: relative;
+}
+.item__shablon-text {
+  position: absolute;
+  bottom: 0;
+  display: none;
 }
 /* PAGINATOR */
 .paginator {
