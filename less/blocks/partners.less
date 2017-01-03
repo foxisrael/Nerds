@@ -3,59 +3,60 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 43px;
-    padding-bottom: 45px;
-    margin-bottom: 80px;
-    text-align: center;
-    vertical-align: top;
-    border-bottom: 2px solid #eee;
+    padding: 45px 0;
+    border-bottom: 2px solid @color-gray;
 }
 
-.glukhanko {
-    display: block;
-    background-image: url("../img/logo-glukhanko.png");
-    background-repeat: no-repeat;
-    width: 198px;
-    height: 37px;
+.gray-line{
+  width: 2px;
+  height: 52px;
+  background-color: @color-gray;
 }
 
-.glukhanko:active,
-.glukhanko:hover {
-    display: block;
-    background-image: url("../img/logo-glukhanko-active.png");
-    background-repeat: no-repeat;
-    width: 198px;
-    height: 37px;
+.htmlacademy,
+.barbershop,
+.pink,
+.mishka{
+  display: block;
+  opacity: 0.2;
 }
 
-.htmlacademy {
-    display: block;
-    background-image: url("../img/logo-htmlacademy.png");
-    background-repeat: no-repeat;
-    width: 199px;
-    height: 68px;
+.htmlacademy:hover,
+.barbershop:hover,
+.pink:hover,
+.mishka:hover{
+  display: block;
+  opacity: 1;
 }
 
 .htmlacademy:active,
-.htmlacademy:hover {
-    background-image: url("../img/logo-htmlacademy-active.png");
-}
-
-.barbershop {
-    display: inline-block;
-    vertical-align: middle;
-    background-image: url("../img/logo-barbershop.png");
-    background-repeat: no-repeat;
-    width: 209px;
-    height: 86px;
-}
-
 .barbershop:active,
-.barbershop:hover {
-    background-image: url("../img/logo-barbershop-active.png");
+.pink:active,
+.mishka:active{
+  display: block;
+  opacity: 0.1;
 }
 
-.glukhanko,
-.htmlacademy {
-    margin-right: 120px;
+.htmlacademy{
+  width: 199px;
+  height: 68px;
+  background: url("../img/logo-htmlacademy.png") no-repeat;
+}
+
+.barbershop{
+  width: 209px;
+  height: 90px;
+  background: url("../img/logo-borodinsky.png") no-repeat;
+}
+
+.pink{
+  width: 185px;
+  height: 52px;
+  background: url("../img/logo-pink.png") no-repeat;
+}
+
+.mishka{
+  width: 173px;
+  height: 84px;
+  background: url("../img/logo-mishka.png") no-repeat;
 }

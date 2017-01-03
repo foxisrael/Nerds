@@ -1,27 +1,122 @@
 .btn {
     display: inline-block;
-    font-family: inherit;
-    font-size: 12px;
+    font-family: @font-family-regular;
+    font-size: @font-size-basic;
     line-height: 18px;
-    color: #fff;
+    color: @color-white;
     text-transform: uppercase;
-    font-weight: bold;
-    background: #fb565a;
-    padding: 10px 39px;
-    border-radius: 5px;
+    background: @color-red;
+    padding: 19px 40px;
+    border-radius: 3px;
     text-align: center;
     cursor: pointer;
 }
 
-.btn:hover {
-    background: #d6494d;
+.busket {
+    display: block;
+    position: relative;
+    top: 10px;
+    left: -35px;
+    font-family: @font-family-bold;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    color: @color-black;
+    background: none;
+    border: none;
+    text-transform: uppercase;
+    outline: none;
 }
 
-.btn:active {
-    background: #b63538;
+.busket:hover {
+    color: @color-red;
+}
+
+.busket:active {
+    color: @color-black;
+    opacity: 0.3;
+}
+
+.busket::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: 1px solid #000;
+    background: url("../img/icon-busket.png");
+    top: 7px;
+    left: -33px;
 }
 
 .btn-slider {
-    padding: 10px 70px;
-    margin-top: 13px;
+    max-width: 240px;
+    padding: 19px 53px;
+}
+
+.btn-slider:hover {
+    background: #e74246;
+}
+
+.btn-slider:active {
+    background: #e74246;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-apps-order,
+.btn-presentation-order,
+.btn-sites-order {
+    padding: 19px 40px;
+}
+
+.btn-sites-order {
+    background: @color-red;
+}
+
+.btn-sites-order:hover {
+    background: #e74246;
+}
+
+.btn-sites-order:active {
+    background: #e74246;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-apps-order {
+    background: @color-green;
+}
+
+.btn-apps-order:hover {
+    background: #00bc6c;
+}
+
+.btn-apps-order:active {
+    background: #00aa62;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-presentation-order {
+    background: @color-yellow;
+}
+
+.btn-presentation-order:hover {
+    background: #eab534;
+}
+
+.btn-presentation-order:active {
+    background: #e5a722;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-contacts {
+    padding: 19px 45px;
+}
+
+.btn-contacts:hover {
+    background: #e74246;
+}
+
+.btn-contacts:active {
+    background: #e74246;
+    color: rgba(255, 255, 255, 0.3);
 }

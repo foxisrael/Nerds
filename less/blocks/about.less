@@ -1,95 +1,95 @@
 .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 0 80px;
+    border-bottom: 2px solid @color-gray;
+}
+
+.about__text{
+  max-width: 650px;
+}
+
+.about__text h2{
+  display: block;
+  margin-bottom: 55px;
+  line-height: 40px;
+}
+
+.about__text p,
+.about__text h3{
+  display: block;
+  margin-bottom: 35px;
+}
+
+.about__text h3,
+.about__features h3{
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.about__text ul,
+.features-items ul{
+  list-style: none;
+}
+
+.about__text li{
+  display: block;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.about__text li:last-child{
+  margin-bottom: 0;
+}
+
+.about__text li::before{
+  display: block;
+  content:"";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background: @color-red;
+  top: 10px;
+  left: -40px;
+}
+
+.nerds-logo{
+    width: 360px;
+    height: 208px;
+    margin-bottom: 40px;
+}
+
+.features-items{
+  margin-top: 55px;
+}
+
+.about__features h3{
+  text-align: center;
+}
+
+.features-item b{
+  display: block;
+  color: @color-black;
+  font-size: 46px;
+}
+
+.features-item sup{
+  position: relative;
+  top: 11px;
+}
+
+.features-items ul{
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-    min-height: 325px;
-    padding: 75px 0 53px 0;
-    border-bottom: 2px solid #eee;
+  padding: 0;
 }
 
-.about__text {
-    margin-right: 64px;
-    margin-top: -24px;
+.features-items li{
+  display: block;
+  width: 100px;
 }
 
-.about__text ul, .about__logo ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-}
-
-.about__text li, .about__logo li {
-    margin-top: 22px;
-}
-
-.zag {
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 22px;
-    color: #283136;
-    text-transform: uppercase;
-    margin-top: 45px;
-}
-
-.about__text {
-    padding-bottom: 20px;
-}
-
-.about__logo {
-    float: left;
-}
-
-.about__logo-date {
-    width: 100%;
-    border-bottom: 2px solid #eee;
-    position: relative;
-    margin: 0 auto;
-    margin-left: 15px;
-}
-
-.about__logo-date-2004 {
-    display: inline-block;
-    width: 110px;
-    position: absolute;
-    top: -7px;
-    left: 65px;
-    text-align: center;
-    background-color: #fff;
-}
-
-.about__logo-big {
-    background-image: url("../img/logo-nerds-big.png");
-    background-repeat: no-repeat;
-    margin-top: -33px;
-    margin-left: 43px;
-    height: 75px;
-    padding-bottom: 35px;
-}
-
-.about__logo-big-text {
-    padding-top: 30px;
-    margin-left: 13px;
-}
-
-.about__text li, .about__logo-big-text li {
-    position: relative;
-    padding-left: 36px;
-}
-
-.red-line::before {
-    content: "";
-    display: block;
-    left: 0px;
-    top: 10px;
-    position: absolute;
-    background-image: url("../img/red-line.png");
-    background-repeat: no-repeat;
-    width: 25px;
-    height: 2px;
-}
-
-.line-red {
-    font-weight: 800;
-    color: red;
+.features-item p{
+  line-height: 18px;
 }

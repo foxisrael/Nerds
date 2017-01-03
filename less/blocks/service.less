@@ -2,97 +2,38 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    min-height: 325px;
-    padding: 75px 0;
-    border-bottom: 2px solid #eee;
-}
-
-.service p {
-    font-size: 15px;
-    font-weight: bold;
-    line-height: 22px;
-}
-
-.service__sites .btn {
-    background: #fb565a;
-    margin-top: 8px;
-    padding: 10px 37px;
-}
-
-.service__sites .btn:hover {
-    background: #d6494d;
-}
-
-.service__sites .btn:active {
-    background: #b63538;
-}
-
-.service__apps .btn {
-    background: #00ca74;
-    margin-top: 8px;
-    padding: 10px 37px;
-}
-
-.service__apps .btn:hover {
-    background: #01a25e;
-}
-
-.service__apps .btn:active {
-    background: #009053;
-}
-
-.service__presentation .btn {
-    background: #efc84a;
-    margin-top: 8px;
-    padding: 10px 37px;
-}
-
-.service__presentation .btn:hover {
-    background: #d6ae2c;
-}
-
-.service__presentation .btn:active {
-    background: #c09b24;
-}
-
-.service__apps,
-.service__presentation,
-.service__sites {
-    min-width: 240px;
-    margin-right: 80px;
-    font-size: 0;
-}
-
-.service__apps,
-.service__presentation p,
-.service__sites {
-    font-size: 15px;
-}
-
-.service__presentation {
-    margin-right: 0;
+    padding: 80px 0;
+    border-bottom: 2px solid @color-gray;
 }
 
 .service__sites-img {
-    background-image: url("../img/web-sites.jpg");
-    background-repeat: no-repeat;
-    width: 240px;
-    height: 124px;
-    margin-bottom: 24px;
+    background: url("../img/illustration-1.jpg") no-repeat;
+    width: 300px;
+    height: 146px;
+    margin-bottom: 25px;
 }
 
 .service__apps-img {
-    background-image: url("../img/applications.jpg");
-    background-repeat: no-repeat;
-    width: 240px;
-    height: 124px;
-    margin-bottom: 24px;
+    background: url("../img/illustration-2.jpg") no-repeat;
+    width: 300px;
+    height: 146px;
+    margin-bottom: 25px;
 }
 
 .service__presentation-img {
-    background-image: url("../img/presentations.jpg");
-    background-repeat: no-repeat;
-    width: 240px;
-    height: 124px;
-    margin-bottom: 24px;
+    background: url("../img/illustration-3.jpg") no-repeat;
+    width: 300px;
+    height: 146px;
+    margin-bottom: 25px;
+}
+
+.service__sites-header{
+  display: block;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.service__sites-text{
+  display: block;
+  margin-bottom: 10px;
 }

@@ -1,4 +1,5 @@
-html, body {
+body,
+html {
     margin: 0 auto;
     padding: 0;
 }
@@ -6,48 +7,47 @@ html, body {
 *,
 *:after,
 *:before {
-  box-sizing: inherit;
-  margin: 0;
+    box-sizing: inherit;
+    margin: 0;
 }
 
 .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
     position: relative;
 }
 
-p, li {
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 22px;
-    color: #283136;
+li,
+p {
+    font-family: @font-family-bold;
+    font-size: @font-size-basic;
+    line-height: @line-height-basic;
+    color: @color-darkblue;
 }
 
 h1 {
-    font-family: Roboto;
-    font-size: 36px;
-    line-height: 36px;
-    color: #000;
+    font-family: @font-family-regular;
+    font-size: @font-size-h1;
+    color: @color-black;
     margin: 0;
     padding: 0;
 }
 
 h2 {
-    font-family: Roboto;
-    font-size: 36px;
+    font-family: @font-family-regular;
+    font-size: @font-size-h2;
     line-height: 36px;
-    color: #000;
+    color: @color-black;
     margin: 0;
     padding: 0;
 }
 
 h3 {
-    font-family: Roboto;
-    font-size: 18px;
+    font-family: @font-family-regular;
+    font-size: @font-size-h3;
     line-height: 30px;
-    color: #000;
+    color: @color-black;
     text-transform: uppercase;
     margin: 0;
     padding: 0;
@@ -63,20 +63,12 @@ a {
     text-decoration: none;
 }
 
-header h1 {
-    font-family: Roboto;
-    line-height: normal;
-    font-size: 40px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
 ul {
     margin: 0;
 }
 
 .clearfix::after {
-  display: table;
-  clear: both;
-  content: "";
+    display: table;
+    clear: both;
+    content: "";
 }

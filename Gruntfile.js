@@ -40,17 +40,17 @@ module.exports = function(grunt) {
       }
     },
 
-    imagemin: {
-      images: {
-        options: {
-          optimizationLevel: 3
-        },
-        files: [{
-          expand: true,
-          src: ["build/img/**/*.{png,jpg,gif}"]
-        }]
-      }
-    },
+    // imagemin: {
+    //   images: {
+    //     options: {
+    //       optimizationLevel: 3
+    //     },
+    //     files: [{
+    //       expand: true,
+    //       src: ["build/img/**/*.{png,jpg,gif}"]
+    //     }]
+    //   }
+    // },
 
     svgstore: {
       options: {
@@ -133,5 +133,5 @@ module.exports = function(grunt) {
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
   grunt.registerTask("symbols", ["svgmin", "svgstore"]);
-  grunt.registerTask("build", ["clean", "copy", "less", "postcss", "csso", "symbols", "imagemin"]);
+  grunt.registerTask("build", ["clean", "copy", "less", "postcss", "csso", "symbols"]);
 };
