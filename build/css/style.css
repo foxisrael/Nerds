@@ -89,6 +89,13 @@ button {
   text-align: center;
   cursor: pointer;
 }
+.btn:hover {
+  background: #e74246;
+}
+.btn:active {
+  background: #e74246;
+  color: rgba(255, 255, 255, 0.3);
+}
 .busket {
   display: block;
   position: relative;
@@ -183,6 +190,16 @@ button {
   background-color: #eeeeee;
   color: #000;
   font-weight: bold;
+  border-top: 3px solid #eeeeee;
+}
+.btn-form:hover {
+  background: #dfdfdf;
+  border-top: 3px solid #eeeeee;
+}
+.btn-form:active {
+  background: #d5d5d5;
+  color: rgba(0, 0, 0, 0.3);
+  border-top: 3px solid #bfbfbf;
 }
 .about {
   display: -ms-flexbox;
@@ -568,27 +585,30 @@ button {
 .paginator ul {
   padding: 0;
   margin: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
 }
 .paginator li {
-  display: inline-block;
-  list-style-type: none;
+  display: block;
   padding: 10px;
   min-width: 27px;
   text-align: center;
   border: 3px solid #f1f1f1;
-  background: #f1f1f1;
+  background: #eeeeee;
   margin-right: 10px;
   text-transform: uppercase;
   border-radius: 5px;
 }
 .paginator li:hover {
-  border: 3px solid #e5e5e5;
-  background: #e5e5e5;
+  border: 3px solid #dfdfdf;
+  background: #dfdfdf;
 }
 .paginator li:active {
-  background: #e5e5e5;
-  border: 3px solid #e5e5e5;
-  border-top: 3px solid #b5b5b5;
+  background: #dfdfdf;
+  border-top: 3px solid #bfbfbf;
+  color: rgba(0, 0, 0, 0.2);
 }
 .paginator li:first-child {
   background: white;
