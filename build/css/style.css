@@ -533,6 +533,33 @@ button {
   position: absolute;
   bottom: 0;
   display: none;
+  padding: 30px 40px 35px;
+  margin: 0 auto;
+  background: #eeeeee;
+  width: 360px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.item__shablon-text h3 {
+  display: block;
+  font-family: "robotomedium", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 25px;
+}
+.item__shablon-text p {
+  color: #666666;
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 25px;
+}
+.maket-sedona:hover .item__shablon-text,
+.maket-pink:hover .item__shablon-text,
+.maket-barbershop:hover .item__shablon-text,
+.maket-mishka:hover .item__shablon-text,
+.maket-aplus:hover .item__shablon-text,
+.maket-kvast:hover .item__shablon-text {
+  display: block;
 }
 /* PAGINATOR */
 .paginator {
